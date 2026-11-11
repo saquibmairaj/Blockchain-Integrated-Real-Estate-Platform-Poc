@@ -1,0 +1,14 @@
+# Node artifact files
+node_modules/
+dist/
+
+# Next.js build output
+.next/
+out/
+
+# Test and coverage output
+coverage/
+tsconfig.tsbuildinfo
+
+# Local environment files
+.env*

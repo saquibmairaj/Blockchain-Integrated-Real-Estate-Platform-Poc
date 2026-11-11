@@ -1,0 +1,46 @@
+{
+  "name": "blockestate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node auth/server.js | npx concurrently \"next dev\" \"npx wait-on http://localhost:3000 && start http://localhost:3000\"",    
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-slider": "^1.2.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-toast": "^1.2.15",
+    "axios": "^1.4.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "concurrently": "^9.1.0",    
+    "cloudinary": "^2.5.1",
+    "express": "^4.21.1",    
+    "lucide-react": "^0.460.0",
+    "mongoose": "^8.8.2",    
+    "paytmchecksum": "^1.5.1",   
+    "next": "^15.5.15",
+    "react": "^19.0",
+    "react-dom": "^19.0",
+    "react-hook-form": "^7.75.0",
+    "request": "^2.88.2",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
+    "validator": "^13.12.0",
+    "zod": "^4.4.3"  
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^8",
+    "eslint-config-next": "^15.5.15",
+    "eslint-config-prettier": "^10.1.8",    
+    "postcss": "^8",    
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"    
+  }
+}
